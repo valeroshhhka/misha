@@ -1,0 +1,44 @@
+.hero {
+	background-image: url(../../img/hero-desktop.png);
+	background-size: 400px 323px;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	margin-bottom: 31px;
+
+	&__title {
+		font-size: 27px;
+		line-height: 30px;
+		text-align: center;
+		padding-top: 67px;
+		margin-bottom: 137px;
+	}
+
+	&__toys {
+		position: relative;
+		background-color: @lightgreen;
+		padding: 38px 30px;
+	}
+
+	&__interier {
+		position: relative;
+		background-color: @blue;
+		padding: 38px 30px;
+	}
+	&__icon {
+		position: absolute;
+
+		&--interier {
+			right: 31px;
+			top: 36px;
+		}
+
+		&--toys {
+			right: 22px;
+			top: 32px;
+		}
+	}
+	&__content {
+		color: @white;
+	}
+}
+
