@@ -1,0 +1,113 @@
+.info {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 58px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 50px 98px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 225px;
+    margin-right: 0;
+  }
+
+  &__heading {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 53px;
+      line-height: 57px;
+      margin-bottom: 47px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+
+    @media (min-width: @tablet-width) {
+      grid-template-columns: 265px 325px;
+      column-gap: 100px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    margin-bottom: 83px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 110px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    color: @black;
+  }
+
+  &__icon {
+    display: block;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &--one {
+      background-image: url("../img/icon-1.svg.svg");
+      width: 33px;
+      height: 38px;
+    }
+
+    &--two {
+      background-image: url("../img/icon-2.svg.svg");
+      width: 35px;
+      height: 34px;
+    }
+
+    &--three {
+      background-image: url("../img/icon-3.svg.svg");
+      width: 47px;
+      height: 27px;
+    }
+
+    &--four {
+      background-image: url("../img/icon-4.svg.svg");
+      width: 55px;
+      height: 40px;
+    }
+
+    &--five {
+      background-image: url("../img/icon-5.svg.svg");
+      width: 34px;
+      height: 27px;
+    }
+
+    &--six {
+      background-image: url("../img/icon-6.svg.svg");
+      width: 33px;
+      height: 32px;
+    }
+  }
+}
