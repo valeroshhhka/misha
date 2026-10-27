@@ -1,4 +1,6 @@
 .hero {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 31px;
@@ -33,6 +35,8 @@
   &__toys {
     position: relative;
     display: block;
+    width: 100%;
+    box-sizing: border-box;
     padding: 38px 30px;
     color: @white;
   }
@@ -48,17 +52,20 @@
 
   &__icon {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    display: block;
 
     &--interier {
       right: 31px;
       top: 36px;
+      width: 40px;
+      height: 62px;
     }
 
     &--toys {
       right: 22px;
       top: 32px;
+      width: 46px;
+      height: 28px;
     }
   }
 
